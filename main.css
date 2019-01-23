@@ -54,6 +54,28 @@
   }
 }
 
+@-webkit-keyframes down {
+  0%, 100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  50% {
+    -webkit-transform: translateY(3px);
+            transform: translateY(3px);
+  }
+}
+
+@keyframes down {
+  0%, 100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  50% {
+    -webkit-transform: translateY(3px);
+            transform: translateY(3px);
+  }
+}
+
 body {
   display: -ms-grid;
   display: grid;
@@ -63,6 +85,7 @@ body {
   justify-items: center;
   text-align: center;
   padding: 0 25% 0 25%;
+  margin-top: 40px;
   font-family: 'Roboto', sans-serif;
   font-weight: 300;
   background-color: #111;
@@ -101,7 +124,6 @@ p {
 img {
   width: 200px;
   height: auto;
-  margin-top: 40px;
 }
 
 .jumping {
@@ -118,5 +140,22 @@ img {
   padding: 10px;
   margin-bottom: 25px;
   border: 2.5px solid var(--color);
+}
+
+.btn:hover {
+  -webkit-box-shadow: 0px .5px 5px .5px #ff6678;
+          box-shadow: 0px .5px 5px .5px #ff6678;
+}
+
+.btn:active {
+  -webkit-transform: translateY(3px);
+          transform: translateY(3px);
+}
+
+.down {
+  -webkit-animation: down .1s linear;
+          animation: down .1s linear;
+  -webkit-box-shadow: 0px .5px 5px .5px #ff6678;
+          box-shadow: 0px .5px 5px .5px #ff6678;
 }
 /*# sourceMappingURL=main.css.map */

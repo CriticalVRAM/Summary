@@ -116,7 +116,7 @@ const pitanja_old = {
 const pitanja = {
     1: [
         'Osiguranje kredita?',
-        'Obuhvata rizie neplaćanja kredita usled insolventnosti dužnika ili kašnjenja u plaćanju kao npr: osiguranje izvoznih, agrarnih kredita, prodaje sa odložnim plaćanjem.'
+        'Obezbeduje poverioca da ce naplatiti svoje potraživanje od osiguravaca u slucaju da dužnik ne izvrši svoje kreditne obaveze pod uslovom da je to zbog nekog od ugovorom o osiguranju predvidenih rizika. Podvrste su: osiguranje izvoznih, hipotekarnih ili agrarnih kredita i prodaje sa odloženim plaćanjem. Pokriva široki spektar rizika kao npr: nelikvidnost i nemogucnost placanja, neizvršavanje ugovornih obaveza ili nemogucnost transfera novca, zabrane uvoza, otkazivanje izvoznih dozvola, rat i nemiri. Tokom vreme osiguranje kredita se razvilo i sada je moguce pokri jos veci broj rizika kao sto su radove u toku, posedovanje akcija...'
     ],
     2: [
         'Osiguravanje jemstva?',
@@ -134,28 +134,95 @@ const pitanja = {
         'Osiguranje pomoći na putu?',
         'Obezbeđuje pomoć nakon nezgode na putu (naknadu troškova smeštaja, prevoza, popravke ili šlepanja vozila)'
     ],
+    6: [
+        'Znacaj kreditnog osiguranja?',
+        `-Obezbedenju urednog vracanja kredita <br> -boljoj kontroli kredita <br> -omogucavanja pracenja postojecih <br> -nalaženja novih korisnika kredita, <br> -boljem upravljanju rizikom <br> -boljem planiranju poslovanja`
+    ],
+    7: [
+        'Vrste kreditnog osiguranja?',
+        `Po suštini, kreditna osiguranja se dele na “delkredere” osiguranje kredita, “kaucijsko” osiguranje kredita i osiguranje protiv zloupotrebe poverenja. <br>
+        Na osnovu rizika pokrivenih osiguranjem I to na: osiguranje protiv komercijalnih rizika I osiguranje protiv politickih rizika. <br>
+        Podela prema subjektu osiguranja pa onda postoje domaca I medunarodna kreditna osiguranja. <br>
+        Podela po dužini trajanja I mogu biti kratkorocna, srednjerocna i dugorocna.`
+    ],
+    8: [
+        'Medjunarodna kreditna osiguranja?',
+        'Osiguranje izvoznih kredita, osiguranje potraživanja od inostranih dužnika protiv komercijalnih rizika, osiguranje potraživanja od inostranih dužnika protiv komercijalnih rizika ukljucujuci i pripreme za izvoz'
+    ],
+    9: [
+        'Osiguranje izvoznih kredita?',
+        'U vecini država osiguranjem protiv komercijalnih I politickih rizika bavi se država preko specijalizovanih osiguravjucih organizacija .Kao zemlja koja ima razvijen ovaj sector osiguranja važno je spomenuti Švajcarsku i to kompaniju “Swiss re” koja se bavi osiguranjem, ali samo u sferi komercijalnih rizika. Minimalni period na koji se osiguranje može zakljuciti je jedan mesec, a premija premija se racuna na zemlje koje su podeljene u sedam klasa opasnosti.'
+    ],
+    10: [
+        'Osiguranje potraživanja od inostranih dužnika protiv komercijalnih rizika?',
+        'Pruža se pokrice za sve vrste komercijalnih rizika, koji mogu do nemogucnosti naplate potraživanja. Postoji obavezno ucešce u šteti osiguranika u vidu samopridržaja. Predmet osiguranja su potraživanja domacih firmi, nastala isporukom roba ili vršenjem radova licima u inostranstvu na kredit. Moguce je osiguranje na osnovu generalnih polisa ili pojedinacnih polisa.'
+    ],
+    11: [
+        'Osiguranje potraživanja od inostranih dužnika protiv komercijalnih rizika ukljucujuci i pripreme za izvoz?',
+        'Kod osiguranja izvoznih kredita rizik nastaje isporukom robe dužniku, medutim kod vecih ivesticionih poduhvata, dešava se da narucilac zahteva da se roba proizvede po njegovim zahtevima I nacrtima. Zbog toga se zakljucuje ugovor o osiguranju koji pokriva period pre uzimanja specijalne porudžbine, I to samo kada se radi o kupcevim specijalnim zahtevima.'
+    ],
+    12: [
+        'Domaca kreditna osiguranja?',
+        'Karakteristika ove vrste osiguranja je da su svi subjekti sa sedištem u jednoj zemlji, da je osiguranik pravno lice, a dužnik fizicko lice. Putem domacih kreditnih osiguranja osiguravaju se potraživanja pravnih lica od fizickih lica, po osnovu odobrenih potrošackih kredita, kredita za odobrenje privredne delatnosti...'
+    ],
+    13: [
+        'Osiguranje rizika nenaplate odobrenih potrošackih kredita?',
+        'Osiguravaju se potraživanja banaka, štedno kreditnih zadruga, trgovackih firmi od fizickih lica, nastalih po osnovu odobrenih potrošackih kredita. Kod nas je uslov za ovu vrstu osiguranja da je potraživanje obezbeđeno blanko menicom sa dva kreditno sposobna žiranta ili hipotekom nad dužnikovom nekretninom koja je osigurana od osnovnih I dopunskih rizika sa vinkulacijom polise na poverioca za vreme trajanja kredita. Davaoci kredita su spoznali opasnost od smrti korisnika kredita, pa se javlja I specificno osiguranje u cilju zaštite potraživanja - životno osiguranje kredita, koje predstavlja osiguranje isplate kredita u slucaju smrti klijenta.'
+    ],
+    14: [
+        'Osiguravanje rizika nenaplate kredita odobrenih za rešavanje stambenih potreba?',
+        'Osigurava se potraživanje kreditora od dužnika, po osnovu kredita odobrenog za kupovinu ili izgradnju nepokretnosti. Obezbedenje je hipoteka na kupljen stan uz obavezu da stan osigura od osnovnih i dopunskih rizika i da tu polisu vinkulira na kreditora za vreme trajanja kreditnog odnosa'
+    ],
+    15: [
+        'Ostale vrste domacih kreditnih osiguranja?',
+        'Kod osiguranja rizika nenaplate kredita odobrenih za unapredenje privredne delatnosti osigurava se novcano potraživanje kreditora (banke, štedionice…) od dužnika. Kod osiguranja rizika nenaplate kredita odobrenih kooperantima podrazumeva se osiguranje potraživanje kreditora (proizvodna firma) od dužnika, po osnovu kredita odobrenog za proizvodnju proizvoda.'
+    ]
 }
-
-// bad but ok it work
 
 let num
 function random() {
-    num = Math.floor(Math.random() * (5 - 1) + 1);
-    return num
+    num = Math.floor(Math.random() * (16 - 1) + 1);
 }
 
 function novo() {
-    document.querySelector('.pitanje').textContent = pitanja[random()][0]
+    random()
+    document.querySelector('.pitanje').textContent = pitanja[num][0]
     document.querySelector('.odgovor').textContent = ''
 }
 
 function show() {
-    document.querySelector('.odgovor').textContent = pitanja[num][1]
+    if (pitanja[num]) document.querySelector('.odgovor').innerHTML = pitanja[num][1]
 }
 
-function anima() {
+function jump() {
     let item = document.querySelector('.chibi')
-    item.setAttribute('src', 'natsuki-up.png')
-    item.className = 'chibi jumping'
-    setTimeout(()=> {item.className = 'chibi', item.setAttribute('src', 'natsuki.png')}, 800)
+    if (!(item.className.split(' ')[1] === 'jumping')) {
+        item.className = 'chibi jumping'
+        item.setAttribute('src', 'natsuki-up.png')
+        setTimeout(()=> {item.className = 'chibi', item.setAttribute('src', 'natsuki.png')}, 800)
+    }
+}
+
+function down(code) {
+    if (code === 108) {
+        document.querySelector('.new').className = 'btn new down'
+        setTimeout(() => document.querySelector('.new').className = 'btn new', 100)
+    } 
+    if (code === 106) {
+        document.querySelector('.show').className = 'btn show down'
+        setTimeout(() => document.querySelector('.show').className = 'btn show', 100)
+    }
+}
+
+function keyhandle() {
+    let e = event.charCode
+    if (e === 32) {
+        jump()
+    } else if (e === 108) {
+        novo()
+        down(108)
+    } else if (e === 106) {
+        show()
+        down(106)
+    }
 }
