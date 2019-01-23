@@ -1,4 +1,4 @@
-const pitanja = {
+const pitanja_old = {
     0: [
         'Sta je invencija?',
         'Invencija predstavlja nešto novo i originalno na globalnom novou naprimer kao sto su novi proizvodi, materijali ili procesi.'
@@ -113,11 +113,34 @@ const pitanja = {
     ],
 }
 
+const pitanja = {
+    1: [
+        'Osiguranje kredita?',
+        'Obuhvata rizie neplaćanja kredita usled insolventnosti dužnika ili kašnjenja u plaćanju kao npr: osiguranje izvoznih, agrarnih kredita, prodaje sa odložnim plaćanjem.'
+    ],
+    2: [
+        'Osiguravanje jemstva?',
+        'Obuhvata direktno i indirektno jemstvo koje garantuje izvršavanje ugovornih ili zakonskih obaveza.'
+    ],
+    3: [
+        'Osiguranje finansijskih gubitaka?',
+        'Obuhvata gubitke vezane za zaposlenje, neočekivane komercijalne gubitke, gubitke zbog lošeg vremena, indirektne komercijalne gubitke i druge novčane gubitke.'
+    ],
+    4: [
+        'Osiguranje pravne zaštite?',
+        'Pokriva troškove sudske zaštite i obezbeđuje pravnu pomoć u sudskom i vansudskom postupku.'
+    ],
+    5: [
+        'Osiguranje pomoći na putu?',
+        'Obezbeđuje pomoć nakon nezgode na putu (naknadu troškova smeštaja, prevoza, popravke ili šlepanja vozila)'
+    ],
+}
+
 // bad but ok it work
 
 let num
 function random() {
-    num = Math.floor(Math.random() * Math.floor(27))
+    num = Math.floor(Math.random() * (5 - 1) + 1);
     return num
 }
 
@@ -128,4 +151,11 @@ function novo() {
 
 function show() {
     document.querySelector('.odgovor').textContent = pitanja[num][1]
+}
+
+function anima() {
+    let item = document.querySelector('.chibi')
+    item.setAttribute('src', 'natsuki-up.png')
+    item.className = 'chibi jumping'
+    setTimeout(()=> {item.className = 'chibi', item.setAttribute('src', 'natsuki.png')}, 800)
 }
