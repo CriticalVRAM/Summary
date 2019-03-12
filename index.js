@@ -1,4 +1,4 @@
-const pitanja_old = {
+const pitanja = {
     0: [
         'Sta je invencija?',
         'Invencija predstavlja nešto novo i originalno na globalnom novou naprimer kao sto su novi proizvodi, materijali ili procesi.'
@@ -113,7 +113,7 @@ const pitanja_old = {
     ],
 }
 
-const pitanja = {
+const old_pitanja_osigranje = {
     1: [
         'Osiguranje kredita?',
         'Obezbeduje poverioca da ce naplatiti svoje potraživanje od osiguravaca u slucaju da dužnik ne izvrši svoje kreditne obaveze pod uslovom da je to zbog nekog od ugovorom o osiguranju predvidenih rizika. Podvrste su: osiguranje izvoznih, hipotekarnih ili agrarnih kredita i prodaje sa odloženim plaćanjem. Pokriva široki spektar rizika kao npr: nelikvidnost i nemogucnost placanja, neizvršavanje ugovornih obaveza ili nemogucnost transfera novca, zabrane uvoza, otkazivanje izvoznih dozvola, rat i nemiri. Tokom vreme osiguranje kredita se razvilo i sada je moguce pokri jos veci broj rizika kao sto su radove u toku, posedovanje akcija...'
